@@ -1,6 +1,6 @@
 using System;
 
-public class sum_two_num 
+public class media 
 {
 	public static void Main(string [] args)
 	{
