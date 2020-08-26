@@ -13,7 +13,7 @@ public class Program
 	{
 
         double num1, num2;
-        int resul = 0;
+        char resul = '0';
 
 
 
@@ -26,27 +26,21 @@ public class Program
         num2 = double.Parse(Console.ReadLine()); 
 
        
-        Console.WriteLine("Para somar digite 1");
+        Console.WriteLine("+ - / *");
 
-        Console.WriteLine("Para subtrair digite 2");
-
-        Console.WriteLine("Para dividir digite 3");
-
-        Console.WriteLine("Para multiplicar digite 4");
-
-        resul = int.Parse(Console.ReadLine());
+        resul = char.Parse(Console.ReadLine());
         switch (resul) 
         {
-        case 1:
+        case '+':
             Console.WriteLine("Soma = {0}", num1+num2);
             break;
-        case 2:
+        case '-':
             Console.WriteLine("Subtração = {0}", num1-num2);
             break;
-        case 3:
+        case '/':
             Console.WriteLine("Divisão = {0}", num1/num2);
             break;
-        case 4:
+        case '*':
             Console.WriteLine("Multiplicação = {0}", num1 * num2);
             break;
         default:
