@@ -1,4 +1,7 @@
- 
+/*1- Criar um programa que leia dois números inteiros, e que solicite ao usuário qual a operação 
+deseja realizar entre esses números. Caso o usuário digitar o caractere “*” será realizada uma multiplicação, 
+caso seja digitado o caractere “/” será realizada uma divisão, caso seja digitado o caractere “+” 
+será realizado uma adição, e caso seja digitado o caractere “–” será realizada uma subtração.*/
 
 using System;
 
@@ -26,22 +29,22 @@ public class Program
         num2 = double.Parse(Console.ReadLine()); 
 
        
-        Console.WriteLine("+ - / *");
+        Console.WriteLine("Escolha a opção digitando o operador desejado: + - / *");
 
         resul = char.Parse(Console.ReadLine());
         switch (resul) 
         {
         case '+':
-            Console.WriteLine("Soma = {0}", num1+num2);
+            Console.WriteLine("Soma = {0} + {1} = {2}", num1,num2, (num1+num2));
             break;
         case '-':
-            Console.WriteLine("Subtração = {0}", num1-num2);
+            Console.WriteLine("Subtração = {0} - {1} = {2}", num1,num2, (num1-num2));
             break;
         case '/':
-            Console.WriteLine("Divisão = {0}", num1/num2);
+            Console.WriteLine("Divisão = {0} / {1} = {2}", num1,num2, (num1/num2));
             break;
         case '*':
-            Console.WriteLine("Multiplicação = {0}", num1 * num2);
+            Console.WriteLine("Multiplicação = {0} * {1} = {2}", num1,num2, (num1*num2));
             break;
         default:
             Console.WriteLine("Digite um valor válido");
