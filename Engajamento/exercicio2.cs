@@ -14,26 +14,26 @@ e o valor, somente o valor final*/
 
 using System;
 
-public static double valorTotal(int codigo, int quantidade){
+public static double valorTotal(int codigo, int quant){
   double valor = 0; 
   if (codigo == 100){
     valor = 1.70;
-    return valor * quantidade;
+    return valor * quant;
     }else if (codigo == 101){
       valor = 2.30;
-      return valor * quantidade;
+      return valor * quant;
     }else if (codigo == 102){
       valor = 2.60;
-      return valor * quantidade;
+      return valor * quant;
     }else if (codigo == 103){
       valor = 2.40;
-      return valor * quantidade;
+      return valor * quant;
     }else if (codigo == 104){
       valor = 2.50;
-      return valor * quantidade;
+      return valor * quant;
     }else if (codigo == 105){
       valor = 1;
-      return valor * quantidade;
+      return valor * quant;
     }else{
       return 0;
     }
