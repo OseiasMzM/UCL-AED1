@@ -1,19 +1,6 @@
-/*2- O cardápio de uma casa de lanches é dado pela tabela abaixo:
-Código Produto Preço Unitário (R$)
----------------------------------
-100  Cachorro quente   R$ 1,70
-101   Bauru Simples    R$ 2,30
-102   Bauru com ovo    R$ 2,60
-103   Hamburguer       R$ 2,40
-104   Cheeseburguer    R$ 2,50
-105   Refrigerante     R$ 1,00
-----------------------------------
-Escreva um algoritmo que leia o código do item adquirido pelo consumidor e a
-quantidade, calculando e mostrando o valor a pagar. Não será necessário exibir o produto
-e o valor, somente o valor final*/
-
 using System;
 
+class MainClass {
 public static double valorTotal(int codigo, int quant){
   double valor = 0; 
   if (codigo == 100){
@@ -38,3 +25,21 @@ public static double valorTotal(int codigo, int quant){
       return 0;
     }
   }
+
+ 
+  public static void Main (string[] args) {
+    
+    int codigo;
+    int quant;
+
+    Console.WriteLine ("\nCódigo Produto Preço Unitário (R$)\n==================================\n100   Cachorro quente  R$ 1,70\n101   Bauru Simples    R$ 2,30\n102   Bauru com ovo    R$ 2,60\n103   Hamburguer       R$ 2,40\n104   Cheeseburguer    R$ 2,50\n105   Refrigerante     R$ 1,00\n==================================");
+
+    Console.Write("Insira o código do produto: ");
+    codigo = int.Parse(Console.ReadLine());
+    Console.Write("Quantidade desejada: ");
+    quant = int.Parse(Console.ReadLine());
+    Console.WriteLine("O valor total é {0} R$.\n",valorTotal(codigo, quant));
+    
+
+  }
+}
